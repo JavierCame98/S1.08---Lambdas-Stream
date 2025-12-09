@@ -1,8 +1,8 @@
-package S081;
+package S0811;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class StringList {
 
@@ -18,7 +18,9 @@ public class StringList {
     }
 
     public static List<String> filterByLetterO (List<String> originalList){
-
+        if(originalList == null){
+            return Collections.emptyList();
+        }
         List<String> streamList = originalList.stream()
                 .filter(s -> s.contains("o"))
                 .toList();
