@@ -1,9 +1,6 @@
 package S0815;
 
-public class PiValue {
-
     @FunctionalInterface
-    public interface piValue{
+    public interface PiValue{
         double getPiValue();
     }
-}
