@@ -20,7 +20,7 @@ public class MonthList {
                 "December"
         );
 
-        MonthsList.forEach(mes -> System.out.println(mes));
+        MonthsList.forEach(month -> System.out.println(month));
     }
 
 
